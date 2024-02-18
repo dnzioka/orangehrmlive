@@ -5,10 +5,10 @@ describe("Login and Logout Test", () => {
     );
     cy.get('input[name="username"]').type("Admin");
     cy.get('input[name="password"]').type("admin123");
-    cy.get("#btnLogin").click();
+    cy.get(".oxd-button").click();
     cy.wait(3000);
-    cy.get(".oxd-topbar-header-breadcrumb-module h6")
-      .should("exist")
-      .and("have.text", "Dashboard");
+    cy.get(
+      ":nth-child(1) > .oxd-sheet > .orangehrm-dashboard-widget-header > .orangehrm-dashboard-widget-name > .oxd-text"
+    ).and("have.text", "Time at Work");
   });
 });
