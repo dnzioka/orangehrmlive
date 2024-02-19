@@ -1,6 +1,6 @@
 describe("OrangeHRM web App Automation", () => {
   it("Should navigate to the OrangeHRM web App", () => {
-    // Visit the web app
+    // Visit the web app URL
     cy.visit(
       "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
     );
